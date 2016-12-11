@@ -1,0 +1,10 @@
+.acf-foundation-column-alignment select {
+  width: auto;
+}
+.acf-container-foundation-column .form-table td {
+  padding: 3px 10px;
+}
+.acf-container-foundation-column .form-table td:first-child {
+  min-width: 100px;
+  padding-left: 0;
+}

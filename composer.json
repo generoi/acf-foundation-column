@@ -1,0 +1,30 @@
+{
+  "name": "generoi/acf-foundation-column",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "description": "Adds two Advanced Custom Fields to setup foundation grid column classes.",
+  "homepage": "https://github.com/generoi/acf-foundation-column",
+  "authors": [
+    {
+      "name": "Oskar Schöldström",
+      "email": "public@oxy.fi"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/generoi/acf-foundation-column/issues"
+  },
+  "require": {
+    "php": ">=5.6.0",
+    "composer/installers": "~1.0"
+  },
+  "archive" : {
+    "exclude": [
+      ".gitignore"
+    ]
+  }
+}
+
+
