@@ -155,8 +155,12 @@ class acf_field_foundation_column extends acf_field
    */
   function update_value( $value, $post_id, $field )
   {
-    $value['classes'][] = $value['shrink'];
-    $value['classes'][] = $value['alignment'];
+    if (!empty($value['shrink'])) {
+      $value['classes'][] = $value['shrink'];
+    }
+    if (!empty($value['alignment'])) {
+      $value['classes'][] = $value['alignment'];
+    }
     foreach ($value['breakpoints'] as $breakpoint => $options) {
       $value['classes'] = array_merge($value['classes'], array_values($options));
     }
