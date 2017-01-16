@@ -155,6 +155,9 @@ class acf_field_foundation_column extends acf_field
    */
   function update_value( $value, $post_id, $field )
   {
+    if (!isset($value['classes'])) {
+      $value['classes'] = [];
+    }
     if (!empty($value['shrink'])) {
       $value['classes'][] = $value['shrink'];
     }
